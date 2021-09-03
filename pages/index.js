@@ -33,7 +33,6 @@ export async function getServerSideProps(context) {
       request[genre]?.url || request.fetchTrending.url
     }`
   ).then((res) => res.json());
-  console.log("every req");
   return {
     props: { results: results },
   };
